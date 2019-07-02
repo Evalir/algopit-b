@@ -1,0 +1,31 @@
+{
+  "name": "algopit-v2-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -e js,graphql -x node src/index.js",
+    "dev": "nodemon -e js,graphql -x node --inspect src/index.js"
+  },
+  "devDependencies": {
+    "add": "^2.0.6",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0",
+    "yarn": "^1.16.0"
+  },
+  "dependencies": {
+    "apollo-server": "^2.7.0-alpha.3",
+    "dotenv": "^8.0.0",
+    "graphql": "^14.4.1",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.2",
+    "nodemon": "^1.19.1"
+  }
+}
