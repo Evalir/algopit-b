@@ -1,5 +1,6 @@
+
 const Query = {
-  problems: (parent, args, context, info) => context.getDB().then(db => db.collection('problems').find().toArray())
+  problems: async (parent, args, context, info) => await context.Problem.find({}).exec()
 };
 
 module.exports = Query;

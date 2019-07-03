@@ -1,10 +1,13 @@
 const { ApolloServer } = require('apollo-server');
 require('dotenv').config();
+require('./config');
+const { Problem } = require('./schemas/ProblemSchema');
+
 // GQL
 const Query = require('./query');
 // const Mutation = require('./mutation');
 // Mongo
-const db = require('./db');
+// const db = require('./db');
 
 const resolvers = {
   Query,
@@ -16,10 +19,11 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: () => ({
-    getDB: db,
+    Problem,
   })
 });
 
 server.listen().then(({ url }) => {
+  console.log(process.env);
   console.log(`🚀 Server ready at ${url}`);
 });
