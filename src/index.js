@@ -5,9 +5,6 @@ const { Problem } = require('./schemas/ProblemSchema');
 
 // GQL
 const Query = require('./query');
-// const Mutation = require('./mutation');
-// Mongo
-// const db = require('./db');
 
 const resolvers = {
   Query,

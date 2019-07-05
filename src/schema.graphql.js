@@ -1,9 +1,21 @@
 const { gql } = require('apollo-server');
 
 const schema = gql`
+
 type Problem {
-  title: String
-  author: String
+  _id: ID!
+  name: String!
+  difficulty: Int
+  computedDifficulty: Float
+  url: String
+  contest: String
+  entryDate: String
+  sourceReferenceId: String
+  lastUpdated: String
+  categories: [String]
+  judge: String
+  writer: String
+  tags: [String]
 }
 
 type Query {
