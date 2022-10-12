@@ -20,7 +20,7 @@
     "yarn": "^1.22.0"
   },
   "dependencies": {
-    "apollo-server": "^2.7.0-alpha.3",
+    "apollo-server": "^2.25.4",
     "dotenv": "^8.0.0",
     "graphql": "^14.4.1",
     "lodash": "^4.17.13",
